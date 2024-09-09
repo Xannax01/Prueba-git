@@ -1,0 +1,95 @@
+*{
+font-size: medium;
+font-family: sans-serif;
+padding: 0;
+margin: 0;
+
+
+    
+}
+.Login{
+background-color:transparent;
+width: 400px;
+height: 400px;
+text-align: center;
+justify-content: center;
+position: absolute;
+top: 130px;
+left: 500px;
+
+
+border: 5px solid #fdfdfd;
+border-radius: 10px;
+}
+ul li {
+
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 40px;
+    position:relative
+       
+
+}
+nav ul {
+    position: relative;
+    top: 80px;
+    
+}
+h1 {
+    position: relative;
+    top: 60px;
+    font-size: 2rem;
+    color: #ffffff;
+
+}
+.IniciarSesion{
+    font-family: sans-serif;
+    position: absolute;
+    left: 670px;
+    top: 450px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    color: #ffffffe1;
+   
+}
+body {
+    background-image: url(img1/Fondo.png);
+   
+    background-size: 100%;
+ 
+   
+   
+}
+.Usuario {
+    font-family: sans-serif;
+    position: absolute;
+    left: 605px;
+    top: 310px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+
+}
+.password {
+    font-family: sans-serif;
+    position: absolute;
+    left: 605px;
+    top: 370px;
+    background-color:transparent;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+
+
+}
+h3 {
+    position: relative;
+    top: 1.5px;
+    
+
+}
