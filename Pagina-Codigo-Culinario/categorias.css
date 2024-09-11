@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, sans-serif;
+    font-size: medium;
+}
+
+body {
+    background-color: white;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+   
+    
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    position: relative;
+    right: 50%;
+    
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight:bold;
+}
+
+.Buscador {
+    display: flex;
+    align-items: center;
+}
+
+.Buscador input {
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+}
+
+.Buscador button {
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-icon img {
+    width: 50px;
+    height: 50px;
+}
+
