@@ -6,16 +6,14 @@
     
    
 }
-body{
-    background-color: #1a1a2e;
-}
+
 header {
    
    justify-content: center;
    align-items: right;
    
-   padding: 20px;
-   background-color: #e85d75;
+   padding: 15px;
+   background-color: #162447;
  
    width: 100%;
    height: 70px;
@@ -44,6 +42,10 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(/Formulario-Tecnologia-web/img/vecteezy_planet-game-background_11558334.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
     
 }
 
@@ -126,8 +128,4 @@ h4 {
 }
 .imagen-container {
     padding: 10px;
-}
-header {
-
-    
 }
