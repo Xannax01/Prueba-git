@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fondo-img/fondo-alimentos-para-el-corazon-.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    height: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.titulo{
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #ff7a00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #e66a00;
+}
+
+/* Estilos para el campo de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #ff7a00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #e66a00;
+}
+
+
+#bloqueprincipal {
+    color: #333;
+    
+    left: 200px;
+    margin: 2px auto;
+    width: 1100px;
+    top: 200px;
+    height: auto;
+    display: flex;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+}
+
+.category {
+   margin: 1px auto;
+    
+}
+
+.category h3 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cuadro-blanco {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    width: calc(33.33% - 20px); /* Tres recetas por fila */
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 290px;
+    
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    background-color: #ff7a00;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.image-container img {
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; 
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .image-container img {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
+
+.shadow {
+    background-color: #c4c4c4;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.active{
+    color: #FF7E1B;
+    text-decoration: underline;
+}
+
+.filtro{
+    display: none;
+}
+p {
+    font-size: 12.5px;
+    color: #666;
+    padding: 0 10px 20px 10px;
+}

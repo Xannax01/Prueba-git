@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.Tabla-Principal {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+td.Barra-Lateral {
+    width: 30%;
+    background-color: #2d4059;
+    color: white;
+    padding: 20px;
+    vertical-align: top;
+}
+
+td.contenido {
+    width: 70%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.Perfil-Imagen {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #2d4059;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #2d4059;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+.Barra-Lateral .section h2 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.Nombre {
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    padding: 10px; 
+    font-size: 20px;
+    
+}

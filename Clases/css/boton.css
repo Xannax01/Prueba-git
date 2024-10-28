@@ -1,0 +1,18 @@
+h1 {
+color: aqua;
+
+}
+
+a:link, a:visited {
+background-color: rgb(255, 0, 0);
+color: blue;
+padding: 15px 20px;
+font-size: 15px;
+text-decoration: none;
+}
+
+a:hover, a:active{
+background-color: rgb(0, 0, 0);
+
+
+}
