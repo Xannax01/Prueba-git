@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Jugador</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container-header">
+            <div class="logo"> 
+                <h1>GameZone</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#juegos"><i class="fas fa-gamepad"></i> Juegos</a></li>
+                    <li><a href="#tienda"><i class="fas fa-store"></i> Tienda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="inicio-section">
+        <div class="welcome-banner">
+            <h2>¡Bienvenido a GameZone!</h2>
+            <p>Explora nuestros juegos y productos exclusivos.</p>
+            <button onclick="location.href='#tienda'">Ver Tienda</button>
+        </div>
+    </section>
+
+    <!-- Sección de Juegos -->
+    <section id="juegos" class="juegos-section">
+        <h2>Juegos Destacados</h2>
+        <div id="particle-background"></div>
+        <div id="carouselJuegos" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3>Pixel Quest</h3>
+                    <img src="img/Juego1.jpeg" alt="Juego 1">
+                </div>
+                <div class="carousel-item">
+                    <h3>Shadow of Pixels</h3>
+                    <img src="img/Juego2.jpeg" alt="Juego 2">
+                </div>
+                <div class="carousel-item">
+                    <h3>Retro Realm</h3>
+                    <img src="img/Juego3.jpeg" alt="Juego 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselJuegos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselJuegos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselJuegos" data-bs-slide-to="0" class="active" aria-label="Juego 1"></button>
+                <button type="button" data-bs-target="#carouselJuegos" data-bs-slide-to="1" aria-label="Juego 2"></button>
+                <button type="button" data-bs-target="#carouselJuegos" data-bs-slide-to="2" aria-label="Juego 3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Tienda -->
+    <section id="tienda" class="tienda-section">
+        <h2>Tienda</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="img/Producto1.png" alt="Producto 1">
+                <h3>Exclusive Loot</h3>
+                <p>$10.00</p>
+                <p class="descripcion">Un cofre de tesoro brillante con monedas doradas que podrás gastar en el juego.</p>
+                <button><i class="fas fa-shopping-cart"></i> Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/Producto2.webp" alt="Producto 2" width="100px">
+                <h3>Legendary Sword</h3>
+                <p>$15.00</p>
+                <p class="descripcion">Espada legendaria de color azul que es capaz de derrotar a cualquier monstruo.</p>
+                <button><i class="fas fa-shopping-cart"></i> Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="img/Producto3.webp" alt="Producto 3">
+                <h3>Legendary Knight</h3>
+                <p>$5.00</p>
+                <p class="descripcion">Transforma a tu personaje en un valiente caballero con esta impresionante skin.</p>
+                <button><i class="fas fa-shopping-cart"></i> Comprar</button>
+            </div>
+            <div class="producto">
+                <div class="etiqueta">¡Oferta!</div>
+                <img src="img/Producto4.webp" alt="Producto 4" width="100px">
+                <h3>Darkness Axe</h3>
+                <p>$8.00 <span class="precio-original">$10.00</span></p>
+                <p class="descripcion">Empuña el poder ancestral con esta imponente hacha forjada en acero oscuro.</p>
+                <button><i class="fas fa-shopping-cart"></i> Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 GameZone - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+   
+<div class="modal fade" id="infoJuego"   aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitulo"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img id="modalImagen" src="" alt="Imagen del Juego" class="modal-img">
+                <p id="modalDescripcion" class="modal-descripcion"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
