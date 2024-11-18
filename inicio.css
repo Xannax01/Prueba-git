@@ -1,0 +1,375 @@
+
+.main-header {
+    background: linear-gradient(to top,#5f1f8e , #162447,#1a1a2e);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+h1, h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #ff7a00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 20px;
+   
+}
+.welcome-banner {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+
+.logo h1 {
+    margin-left: 30px;
+    font-size: 3rem;
+    font-family: 'Nunito Sans', sans-serif;
+    background: linear-gradient(90deg, #ff7a00, #e85d75);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e85d75;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff7a00;
+    transform: scale(1.1);
+}
+
+nav ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ff7a00;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.main-header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-header a {
+    text-decoration: none;
+    color: #e85d75;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-header a:hover {
+    color: #ff7a00;
+}
+
+
+
+ .inicio-section {
+    background-image: url(img/Fondo.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+   background-attachment: fixed;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+        text-align: center;
+ }
+ .inicio-section button:hover{
+    background: linear-gradient(90deg, #ff7a00, #e85d75);
+    transform: scale(1.1);
+ }   
+ .inicio-section button{
+    background: linear-gradient(90deg, #e85d75, #ff7a00);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+ }
+
+
+.juegos-section h3 {
+    margin-top: 20px
+    ;
+}
+    .juegos-section {
+        background: linear-gradient(to bottom,#5f1f8e , #6a2c8b,#1a1a2e ); 
+        color: #FFF;
+        padding: 120px 20px 180px 20px;
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .juegos-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('img/textura.png') repeat;
+        opacity: 0.1;
+        z-index: 0;
+    }
+    
+ .juegos-section img {
+
+    width: 30%;
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 10%;
+}
+.tienda-section {
+    
+    background: linear-gradient(to top,#5f1f8e , #6a2c8b,#1a1a2e ); 
+    color: #FFF;
+    
+    
+    padding: 140px 20px;
+    color: white;
+    text-align: center;
+   
+}
+.tienda-section button {
+    margin-top: 0px;
+}
+
+.tienda-section .productos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.producto {
+    background: linear-gradient(to bottom,#5f1f8e , #162447,#1a1a2e ); 
+    color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+.producto img,
+.carousel-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto img:hover,
+.carousel-item img:hover {
+    transform: scale(1.1);
+}
+
+.producto img {
+    max-width: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    max-height: 100px;
+}
+
+.producto img:hover {
+    transform: scale(1.1);
+}
+.producto button {
+    background: linear-gradient(90deg, #e85d75, #ff7a00);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+   
+   
+}
+
+.producto button:hover {
+    background: linear-gradient(90deg, #ff7a00, #e85d75);
+    transform: scale(1.1);
+}
+.etiqueta {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #e85d75;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.precio-original {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+}
+
+
+
+.main-footer {
+    background: linear-gradient(90deg, #6a2c8b,#1a1a2e );
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+button {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/* Definir un color morado personalizado */
+.carousel-item img {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(255, 122, 0, 0.8);
+}
+
+.carousel-item h3 {
+    font-size: 1.5rem;
+    color: #e85d75;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.carousel-item h3:hover {
+    color: #ff7a00;
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(255, 122, 0, 0.8);
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #e85d75;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #ff7a00;
+    transform: scale(1.2);
+}
+.modal-content {
+    background: linear-gradient(to bottom,#5f1f8e , #162447,#1a1a2e ); 
+    color: #FFF;
+  
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ff7a00;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    color: #f3f0ed;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(255, 122, 0, 0.8);
+}
+
+.modal-descripcion {
+    font-size: 1rem;
+    color: #dddddd;
+}
+
+.modal-footer {
+    border-top: 1px solid #ff7a00;
+}
+
+.btn-secondary {
+    background-color: #5f1f8e;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5f1f8e;
+}
