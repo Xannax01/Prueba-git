@@ -44,8 +44,8 @@ body {
 
 .card-img-top {
     width: 100%;
-    height: 200px; /* Tamaño uniforme */
-    object-fit: cover; /* Ajusta la imagen al cuadro sin deformarla */
+    height: 200px; 
+    object-fit: cover; 
 }
 
 
