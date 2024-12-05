@@ -1,31 +1,24 @@
-*{
+* {
     box-sizing: border-box;
-  
 }
 
-body
-{
-    font-family: "Roboto";
+body {
+    font-family: "Roboto", sans-serif;
     font-size: 13px;
-    
-    
-    
-    
+    margin: 0;
+    padding: 0;
 }
 
-a
-{
+a {
     display: inline-block;
     text-decoration: none;
 }
 
-p
-{
-    color:black;
+p {
+    color: black;
 }
 
-header
-{
+header {
     padding: 5px 0;
     position: fixed;
     top: 0;
@@ -33,25 +26,22 @@ header
     z-index: 2;
     background-color: white;
     width: 100%;
-   
 }
 
-header .container
-{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 15px;
 }
 
-header .container .logo
-{
+header .container .logo {
     width: 150px;
     height: 100%;
 }
 
-header .container nav a
-{
-    Color: red;
+header .container nav a {
+    color: red;
     text-decoration: none;
     margin: 0 15px;
     font-size: 18px;
@@ -59,23 +49,20 @@ header .container nav a
     background-color: #f9f9f9;
 }
 
-.boton
-{
+.boton {
     text-align: center;
     text-decoration: none;
     padding: 15px 20px;
 }
 
-.boton.boton-rojo
-{
+.boton.boton-rojo {
     color: white;
     background-color: red;
     font-size: 20px;
     font-weight: bold;
 }
 
-.boton.boton-blanco
-{
+.boton.boton-blanco {
     color: red;
     background-color: white;
     font-size: 16px;
@@ -83,94 +70,84 @@ header .container nav a
     border: 1px solid red;
 }
 
-.seccion
-{
+.seccion {
     padding-top: 60px;
     padding-bottom: 60px;
-
 }
 
-.cuadrado-perfecto 
-{
+.cuadrado-perfecto {
     width: 100%;
-    
-    
 }
 
-.container
-{
-    width: 1140px;
-    margin: 0 auto 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-.row
-{
+.row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin: 0 -15px;
 }
 
-.columna /quedamos hasta aca con la clase del lunes/
-{
-    padding-right: 15px;
-    padding-left: 15px;
-
+.columna {
+    padding: 0 15px;
 }
 
-.columna-33
-{
+.columna-33 {
     width: 33.33%;
 }
 
-#inicio
-{
+#inicio {
     position: relative;
-}
-
-#inicio img 
-{
     width: 100%;
-    
 }
 
-#inicio .bloque-inicio
-{
+#inicio .container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#inicio img {
+    width: 100%;
+    height: auto;
+}
+
+#inicio .bloque-inicio {
     position: absolute;
     top: 40%;
     left: 50%;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
     margin-left: -200px;
 }
 
-#inicio .bloque-inicio h1
-{
+#inicio .bloque-inicio h1 {
     color: white;
     font-size: 35px;
 }
 
-#inicio .bloque-inicio p
-{
+#inicio .bloque-inicio p {
     color: white;
     font-size: 16px;
 }
 
-#nosotros
-{
-    background-image: url(img/Conocenos.jpg);
-    background-size:cover;
+#nosotros {
+    background-image: url('img/Conocenos.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 450px;
-    
-
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 0;
 }
 
-#nosotros p
-{
+#nosotros p {
     color: whitesmoke;
     text-align: left;
     font-size: 16px;
@@ -178,18 +155,18 @@ header .container nav a
     max-width: 50%;
     padding-top: 250px;
     font-size: 22px;
-    
 }
 
-#servicios{
-    background-image: url(img/fondo.jpg);
+#servicios {
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background: cover;
-    background-size: 100%;
-   
+    background-position: center center;
+    width: 100%;
+    height: auto;
 }
-#servicios .bloque-servicio
-{
+
+#servicios .bloque-servicio {
     border: 1px solid grey;
     height: 100%;
     width: 100%;
@@ -197,34 +174,26 @@ header .container nav a
     background-color: white;
 }
 
-
-
-#servicios .bloque-servicio .bloque-img-servicio img 
-{
+#servicios .bloque-servicio .bloque-img-servicio img {
     width: 100%;
-  max-height: 200px;
+    max-height: 200px;
+    object-fit: cover;
 }
 
-#servicios .bloque-servicio .bloque-contenido-servicio
-{
+#servicios .bloque-servicio .bloque-contenido-servicio {
     padding: 15px;
 }
 
-#servicios .bloque-servicio .bloque-contenido-servicio h3
-{
+#servicios .bloque-servicio .bloque-contenido-servicio h3 {
     margin-top: 0px;
     font-size: 25px;
 }
 
-
-
 #galeria .bloque-img-galeria img {
     width: 100%;
     height: 300px;
-  
-
+    object-fit: cover;
 }
-
 
 .row {
     display: flex;
@@ -240,7 +209,6 @@ header .container nav a
     flex: 0 0 50%;
 }
 
-
 .form-block {
     margin-bottom: 15px;
 }
@@ -251,7 +219,7 @@ label {
     font-weight: bold;
 }
 
-.input-control
+.input-control,
 .textarea-control {
     width: 100%;
     padding: 10px;
@@ -260,7 +228,7 @@ label {
 }
 
 .boton {
-    background-color: #e70000; 
+    background-color: #e70000;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -273,12 +241,10 @@ label {
     background-color: #c70000;
 }
 
-
 footer {
-    background-color: #ff0909fd; 
+    background-color: #ff0909fd;
     color: white;
     padding: 40px 0;
-   
 }
 
 .footer-logo {
@@ -292,17 +258,17 @@ h3 {
 ul {
     list-style-type: none;
     padding: 0;
-    
 }
 
 ul li {
     margin: 5px 0;
-    
 }
+
 ul li a {
     color: black;
     font-weight: 500;
 }
+
 .social-icons {
     display: flex;
     padding: 0;
@@ -321,18 +287,153 @@ ul li a {
 .barra-footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #d90000; 
+    background-color: #d90000;
 }
 
-iframe{
-    width: 30%;
+iframe {
+    width: 100%;
     height: 100%;
-   
 }
+
 #contactenos {
-background-image: url(img/fondo2.webp);
-background-repeat: no-repeat;
-    background: cover;
-    background-size: 100%;
-   
+    background-image: url('img/fondo2.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+}
+
+/* General responsive adjustments */
+
+/* For tablets and smaller devices */
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .columna-33 {
+        width: 100%;
+    }
+}
+
+/* For smaller devices like phones */
+@media (max-width: 768px) {
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .container .logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    header .container nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .container nav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    #inicio .bloque-inicio {
+        width: 80%;
+        top: 40%;
+        left: 50%;
+        margin-left: -40%;
+    }
+
+    #inicio .bloque-inicio h1 {
+        font-size: 28px;
+    }
+
+    #inicio .bloque-inicio p {
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .columna-33 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #servicios .bloque-servicio .bloque-img-servicio img {
+        max-height: 150px;
+    }
+
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .columna-25 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #galeria .bloque-img-galeria img {
+        height: 200px;
+    }
+
+    .columna-50 {
+        width: 100%;
+    }
+
+    .boton {
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}
+
+/* For very small devices like extra small phones */
+@media (max-width: 480px) {
+
+    header .container .logo {
+        width: 100px;
+    }
+
+    #inicio .bloque-inicio {
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        margin-left: -45%;
+    }
+
+    #inicio .bloque-inicio h1 {
+        font-size: 22px;
+    }
+
+    #inicio .bloque-inicio p {
+        font-size: 12px;
+    }
+
+    #nosotros p {
+        font-size: 18px;
+        max-width: 90%;
+        padding-top: 200px;
+    }
+
+    #servicios .bloque-servicio {
+        height: auto;
+    }
+
+    #servicios .bloque-servicio .bloque-img-servicio img {
+        height: 150px;
+    }
+
+    .footer-logo {
+        max-width: 120px;
+    }
 }
