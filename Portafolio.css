@@ -3,15 +3,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    color: #333; /* Color de texto más oscuro para mejor lectura */
-    background: linear-gradient(135deg, #e6f0f6, #ffffff); /* Fondo más suave y limpio */
+    color: #333;
+    background: linear-gradient(135deg, #e6f0f6, #ffffff);
 }
 
-header {
-    background-color: #007bff; /* Azul suave para el encabezado */
+.header {
+    background-color: #007bff;
     color: #fff;
-    padding: 2rem 0;
-    
+    padding: 1.5rem 0;
 }
 
 .header .logo {
@@ -20,70 +19,54 @@ header {
 }
 
 .nav .nav-link {
-    margin-left: 20px;
+    margin-left: 15px;
     font-weight: 500;
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 1.5rem;
 }
 
 .card {
     border: none;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    margin-top: 30px;
-    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    height: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-title {
-    color: #007bff; /* Título con color azul suave */
+    color: #007bff;
 }
 
 .card-body {
-    padding: 1.5rem;
-    flex-grow: 1; /* Esto permite que los botones queden al final */
+    padding: 1rem;
+    flex-grow: 1;
     text-align: center;
 }
 
-.card-body h5 {
-    margin-bottom: 10px;
-    font-size: 1.25rem;
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Tamaño uniforme */
+    object-fit: cover; /* Ajusta la imagen al cuadro sin deformarla */
 }
 
-
-.card-body p {
-    font-size: 1rem;
-    color: #666; /* Color de texto más suave */
-}
 
 .card .btn {
-    margin-top: 20px;
-    padding: 12px 20px;
+    margin-top: auto;
+    padding: 10px 20px;
     font-size: 16px;
-    text-decoration: none;
     border-radius: 8px;
-    background-color: #007bff; /* Botón azul suave */
+    background-color: #007bff;
     color: white;
-    width: 100%;
-    text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
 .card .btn:hover {
-    background-color: #0056b3; /* Hover más suave */
+    background-color: #0056b3;
 }
 
 footer {
-    background: #f8f9fa; /* Fondo claro para el pie de página */
+    background: #f8f9fa;
     color: #333;
     text-align: center;
     padding: 2rem 0;
@@ -97,19 +80,11 @@ footer a {
 }
 
 footer a:hover {
-    color: #0056b3; /* Hover suave en el enlace */
+    color: #0056b3;
 }
 
-.btn-light {
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-.btn-light:hover {
-    background-color: #e2e6ea;
-}
-.card-img-top {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover; 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }

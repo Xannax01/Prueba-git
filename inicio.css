@@ -1,6 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
 .main-header {
-    background: linear-gradient(to top,#5f1f8e , #162447,#1a1a2e);
+    background: linear-gradient(to top, #5f1f8e, #162447, #1a1a2e);
     padding: 10px 20px;
     position: fixed;
     width: 100%;
@@ -8,6 +18,7 @@
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 h1, h2 {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
@@ -15,14 +26,15 @@ h1, h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
 }
+
 p {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1rem;
     line-height: 1.8;
     color: #ffffff;
     margin-bottom: 20px;
-   
 }
+
 .welcome-banner {
     background: rgba(0, 0, 0, 0.6); 
     padding: 20px;
@@ -32,9 +44,6 @@ p {
     color: #ffffff;
 }
 
-
-
-
 .logo h1 {
     margin-left: 30px;
     font-size: 3rem;
@@ -43,8 +52,8 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
 }
+
 .container-header {
     display: flex;
     justify-content: space-between;
@@ -57,6 +66,7 @@ nav {
     display: flex;
     justify-content: flex-end;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -113,24 +123,19 @@ nav ul li:hover::after {
     color: #ff7a00;
 }
 
-
-
- .inicio-section {
+.inicio-section {
     background-image: url(img/Fondo.jpeg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-   background-attachment: fixed;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-        text-align: center;
- }
- .inicio-section button:hover{
-    background: linear-gradient(90deg, #ff7a00, #e85d75);
-    transform: scale(1.1);
- }   
- .inicio-section button{
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inicio-section button {
     background: linear-gradient(90deg, #e85d75, #ff7a00);
     color: white;
     border: none;
@@ -140,53 +145,56 @@ nav ul li:hover::after {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
- }
+}
 
+.inicio-section button:hover {
+    background: linear-gradient(90deg, #ff7a00, #e85d75);
+    transform: scale(1.1);
+}
+
+.juegos-section {
+    background: linear-gradient(to bottom, #5f1f8e, #6a2c8b, #1a1a2e); 
+    color: #FFF;
+    background-size: 100%;
+    padding: 120px 20px 180px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.juegos-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/textura.png') repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
 
 .juegos-section h3 {
-    margin-top: 20px
-    ;
+    margin-top: 20px;
 }
-    .juegos-section {
-        background: linear-gradient(to bottom,#5f1f8e , #6a2c8b,#1a1a2e ); 
-        color: #FFF;
-        padding: 120px 20px 180px 20px;
-        color: white;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .juegos-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url('img/textura.png') repeat;
-        opacity: 0.1;
-        z-index: 0;
-    }
-    
- .juegos-section img {
 
+.juegos-section img {
     width: 30%;
     height: 200px;
     margin-top: 30px;
     border-radius: 10%;
 }
+
 .tienda-section {
-    
-    background: linear-gradient(to top,#5f1f8e , #6a2c8b,#1a1a2e ); 
+    background: linear-gradient(to top, #5f1f8e, #6a2c8b, #1a1a2e); 
     color: #FFF;
-    
-    
+    background-size: 100%;
     padding: 140px 20px;
     color: white;
     text-align: center;
-   
 }
+
 .tienda-section button {
     margin-top: 0px;
 }
@@ -199,7 +207,7 @@ nav ul li:hover::after {
 }
 
 .producto {
-    background: linear-gradient(to bottom,#5f1f8e , #162447,#1a1a2e ); 
+    background: linear-gradient(to bottom, #5f1f8e, #162447, #1a1a2e); 
     color: #FFF;
     border-radius: 10px;
     padding: 20px;
@@ -214,14 +222,10 @@ nav ul li:hover::after {
     transform: translateY(-10px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
+
 .producto img,
 .carousel-item img {
     transition: transform 0.3s ease-in-out;
-}
-
-.producto img:hover,
-.carousel-item img:hover {
-    transform: scale(1.1);
 }
 
 .producto img {
@@ -232,9 +236,11 @@ nav ul li:hover::after {
     max-height: 100px;
 }
 
-.producto img:hover {
+.producto img:hover,
+.carousel-item img:hover {
     transform: scale(1.1);
 }
+
 .producto button {
     background: linear-gradient(90deg, #e85d75, #ff7a00);
     color: white;
@@ -245,14 +251,13 @@ nav ul li:hover::after {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
-   
-   
 }
 
 .producto button:hover {
     background: linear-gradient(90deg, #ff7a00, #e85d75);
     transform: scale(1.1);
 }
+
 .etiqueta {
     position: absolute;
     top: -10px;
@@ -272,14 +277,13 @@ nav ul li:hover::after {
     font-size: 12px;
 }
 
-
-
 .main-footer {
-    background: linear-gradient(90deg, #6a2c8b,#1a1a2e );
+    background: linear-gradient(90deg, #6a2c8b, #1a1a2e);
     color: white;
     text-align: center;
     padding: 10px;
 }
+
 button {
     background-color: #1a1a2e;
     color: white;
@@ -290,6 +294,7 @@ button {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 /* Definir un color morado personalizado */
 .carousel-item img {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -327,10 +332,10 @@ button {
     background-color: #ff7a00;
     transform: scale(1.2);
 }
+
 .modal-content {
-    background: linear-gradient(to bottom,#5f1f8e , #162447,#1a1a2e ); 
+    background: linear-gradient(to bottom, #5f1f8e, #162447, #1a1a2e); 
     color: #FFF;
-  
     border-radius: 10px;
     text-align: center;
 }
@@ -372,4 +377,69 @@ button {
 
 .btn-secondary:hover {
     background-color: #5f1f8e;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .inicio-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .juegos-section,
+    .tienda-section {
+        padding: 80px 20px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .container-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .inicio-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .juegos-section img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tienda-section .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+        margin-bottom: 20px;
+    }
 }

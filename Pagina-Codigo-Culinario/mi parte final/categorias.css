@@ -1,0 +1,477 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fondo-img/fondo-alimentos-para-el-corazon-.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    height: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #FF7E1B;
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #eee;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 2px solid #eee;
+    border-left: none;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+#bloqueprincipal {
+    color: #333;
+    
+    left: 200px;
+    margin: 2px auto;
+    width: 1100px;
+    top: 200px;
+    height: auto;
+    display: flex;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.category h3 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cuadro-blanco {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 20px 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    width: calc(30% - 20px); 
+    text-align: center;
+    position: relative; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    background-color: #ff7a00;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .image-container img {
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
+
+.shadow {
+    background-color: #c4c4c4;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.recipe-info {
+    padding: 10px;
+    
+    border-top: 1px solid #1d0707;
+    text-align: left;
+}
+
+.recipe-info h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.recipe-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+
+}
+
+.btn-modal{
+    display: none;
+}
+
+#img-modal{
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.container-modal{
+    width: 100%;
+    max-height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items:flex-start;
+    z-index: 100;
+    overflow: auto;
+}
+
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+.content-modal{
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 4px;
+}
+
+.content-modal h2{
+    margin-bottom: 15px;
+}
+
+.content-modal .linea{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar label:hover{
+    background-color: #FF7E1B;
+}
+
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+    #bloqueprincipal {
+        width: 90%;
+    }
+    .recipe-card {
+        width: calc(50% - 20px); /* Dos recetas por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .recipe-card {
+        width: 100%; /* Una receta por fila */
+    }
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .search-bar input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+    .category h3 {
+        font-size: 28px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fondo-img/fondo-alimentos-para-el-corazon-.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    height: 60px; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.titulo {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: black;
+    padding: 10px 20px; 
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.search-container button {
+    padding: 4px 4px;
+    margin-left: 10px;
+    background-color: #ff7a00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.search-container button:hover {
+    background-color: #e66a00;
+}
+
+/* Estilos para las tarjetas */
+.cuadro-blanco {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 5px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto;
+    
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    background-color: #fff;
+    width: calc(30% - 20px); 
+    text-align: center;
+    position: relative; 
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    background-color: #ff7a00; 
+    position: relative;
+    height: 120px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1; 
+}
+
+.shadow {
+    background-color: #c4c4c4; 
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+h2 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: black;
+    font-weight: 600;
+}
+
+p {
+    font-size: 12px;
+    color: #666;
+    padding: 0 10px 20px 10px;
+    text-decoration: none; 
+}
+
+.active {
+    color: #FF7E1B;
+    text-decoration: none; 
+}
+
+.filtro {
+    display: none;
+}
+.carousel-control-prev {
+    left: -10px; /* Mueve la flecha de la izquierda hacia afuera */
+}
+
+.carousel-control-next {
+    right: -50px; /* Mueve la flecha de la derecha hacia afuera */
+}
+.cuadro-blanco .categorias{
+    font-weight: 600;
+    font-size: 30px;
+}
